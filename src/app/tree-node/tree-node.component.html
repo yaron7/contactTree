@@ -1,0 +1,6 @@
+<div (click)="toggleContacts(node)">{{node.name}}</div>
+<ul *ngIf="contactID == node.id">
+  <li *ngFor="let node of node.contacts">
+    <tree-node [node]="node"></tree-node>
+  </li>
+</ul>
